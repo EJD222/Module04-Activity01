@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App4.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Welcome to Xamarin.Forms!"
+                    HorizontalTextAlignment="Center"
+                    TextColor="White"
+                    FontSize="36" />
+        </Frame>
+        <StackLayout Spacing="10" 
+                 Padding="50"
+                 VerticalOptions="CenterAndExpand">
+            <Label Text="List and Collection View"
+                   HorizontalOptions="CenterAndExpand"
+                   FontSize = "25"/>
+            <Button Text="ListView" Clicked="Activity1Page"/>
+            <Button Text="TextCell" Clicked="Activity2Page"/>
+            <Button Text="ImageCell" Clicked="Activity3Page"/>
+            <Button Text="SwitchCell" Clicked="Activity4Page"/>
+            <Button Text="EntryCell" Clicked="Activity5Page"/>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

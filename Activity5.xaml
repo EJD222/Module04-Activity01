@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App4.Activity5">
+    <ContentPage.Content>
+        <StackLayout>
+            <TableView Intent="Form">
+                <TableRoot>
+                    <TableSection Title="User Information">
+                        <EntryCell Label="First Name"
+                                   Placeholder="Enter Your First Name"
+                                   x:Name="FName"/>
+                        <EntryCell Label="Last Name"
+                                   Placeholder="Enter Your Last Name"
+                                   x:Name="LName"/>
+                        <EntryCell Label="Email"
+                                   Placeholder="Enter Your Email" 
+                                   x:Name="MyEmail"/>
+                    </TableSection>
+                </TableRoot>
+            </TableView>
+            <Button Text="Submit" Clicked="OnSubmitEntry"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
